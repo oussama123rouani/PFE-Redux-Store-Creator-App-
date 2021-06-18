@@ -1,0 +1,28 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  mat-toolbar{
+    margin-bottom: 30px;
+    background-color: rgba(17, 13, 248, 0.597);
+  }
+
+
+  .btn-dialog-close{
+    margin-left: 220px;
+  }
+
+  input{
+    margin-bottom: 20px;
+  } 
+.se{
+  width: 100%;
+}
+button{
+  border: unset;
+}

@@ -1,0 +1,20 @@
+
+<mat-toolbar>
+  <span>Create State</span>
+  <span class="fill-remaining-space" ></span>
+  <button class="btn-dialog-close" mat-stroked-button tabIndex="-1" (click)="close()"><mat-icon>cancel</mat-icon></button>
+</mat-toolbar>
+<form [formGroup]="StateForm" (ngSubmit)="onSubmit()">
+  <input type="text" name="name" formControlName="name" class="form-control" placeholder="name of state">
+  <mat-form-field appearance="fill" class="se">
+    <mat-label>Models</mat-label>
+  <mat-select formControlName="model"  multiple placeholder="Models"  >
+    <mat-option *ngFor="let model of models; let i = index" [value]="model.name">
+      {{model.name}}
+    </mat-option>
+  </mat-select>
+  </mat-form-field>
+  <button type="submit" class="btn btn-success" >Submit</button>
+</form>
+
+

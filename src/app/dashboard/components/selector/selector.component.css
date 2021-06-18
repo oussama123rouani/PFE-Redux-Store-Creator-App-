@@ -1,0 +1,9 @@
+mat-toolbar{
+    margin-bottom: 30px;
+    background-color: rgba(17, 13, 248, 0.597);
+  }
+
+
+  .btn-dialog-close{
+    margin-left: 250px;
+  }

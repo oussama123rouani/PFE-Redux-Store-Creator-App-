@@ -1,0 +1,46 @@
+     
+<mat-toolbar>
+  <span>Create Model</span>
+  <span class="fill-remaining-space" ></span>
+  <button class="btn-dialog-close" mat-stroked-button tabIndex="-1" (click)="close()"><mat-icon>cancel</mat-icon></button>
+</mat-toolbar>
+<div class="container">
+  <form [formGroup]="ModelForm" (ngSubmit)="onSubmit()">
+    
+  
+    <div class="table-wrapper">
+ 
+        <input type="text" name="nameModel" formControlName="nameModel" class="form-control" placeholder="Model Name">
+      
+    <div class="FixedHeader">
+      <table class="fl-table" formArrayName="inputes">
+          <thead>
+            <tr >
+              <th colspan="2">Add Input:</th>
+              <th ><button type="button" mat-button (click)="addInput()" ><mat-icon>add_circle_outline</mat-icon></button></th>
+          </tr>
+          </thead>
+          <tbody *ngFor="let input of inputes().controls; let i=index" [formGroupName]="i">
+            <td>
+              <input type="text" formControlName="name" class="form-control" placeholder="name">
+            </td>
+            <td>
+              <input type="text" formControlName="type" class="form-control" placeholder="type">
+            </td>
+            <td >
+              <button (click)="removeInput(i)" mat-button><mat-icon>remove_circle_outline</mat-icon></button>
+            </td>
+          </tbody>
+      </table>
+    </div>
+    </div>
+    
+   
+    <button type="submit" class="btn btn-success" style="margin-top: 20px;">Submit</button>
+    
+  </form>
+</div> 
+
+
+
+

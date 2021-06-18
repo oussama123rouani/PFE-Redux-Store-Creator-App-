@@ -1,0 +1,60 @@
+
+h2{
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  padding: 30px 0;
+}
+
+/* Table Styles */
+.title{
+  background-color: white;
+}
+
+.table-wrapper1 , .table-wrapper2 , .table-wrapper3 {
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+  width: 100%;
+  padding: 0,0,0,0;
+}
+
+.fl-table1 , .fl-table2 , .fl-table3 {
+ 
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  white-space: nowrap;
+  background-color: #272727;
+  margin: 0px 20px 0px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.5 );
+  width: 100%;
+}
+
+.fl-table1 td, .fl-table1 th , .fl-table2 td, .fl-table2 th , .fl-table3 td, .fl-table3 th {
+  text-align: center;
+  padding: 8px;
+
+}
+
+.fl-table1 td , .fl-table2 td , .fl-table3 td {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.fl-table1 thead th , .fl-table2 thead th , .fl-table3 thead th {
+  color: #ffffff;
+  background:#324960;
+  position: sticky;
+  top: 0;
+
+}
+
+ .tables {
+  display: flex;
+  justify-content: first baseline;
+  padding-top: 40px;
+}

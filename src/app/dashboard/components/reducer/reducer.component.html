@@ -1,0 +1,38 @@
+
+<mat-toolbar>
+  <span> Create Reducer</span>
+  <span class="fill-remaining-space" ></span>
+  <button class="btn-dialog-close" mat-stroked-button tabIndex="-1" (click)="close()" ><mat-icon>cancel</mat-icon></button>
+</mat-toolbar>
+
+
+<form [formGroup]="ReducerForm" (ngSubmit)="onSubmit()">
+
+
+  <mat-form-field appearance="fill" class="se">
+    <mat-label>State</mat-label>
+  <mat-select formControlName="state" placeholder="state"  >
+    <mat-option *ngFor="let state of states; let i = index" [value]="state.name">
+      {{state.name}}
+    </mat-option>
+  </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="se">
+    <mat-label>Actions</mat-label>
+  <mat-select formControlName="action"  multiple placeholder="Actions"  >
+    <mat-option *ngFor="let action of actions; let i = index" [value]="action.type">
+      {{action.type}}
+    </mat-option>
+  </mat-select>
+  </mat-form-field>
+  <button type="submit" class="btn btn-success" >Submit</button>
+</form>
+
+    
+        
+         
+
+
+
+

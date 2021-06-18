@@ -1,0 +1,95 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+h2{
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  padding: 10px 0;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+  margin: 5px 5px 5px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+.FixedHeader{
+  overflow-y: auto;
+  height: 200px;
+  width: 100%;
+  
+}
+.FixedHeader thead th {
+  position: sticky;
+  top: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:  #bac4e6;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1d2233; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3e188a; 
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width:99.9%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color:#394057;
+}
+
+.fl-table td, .fl-table th {
+  text-align: center;
+  padding: 8px;
+    
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: #1d2233;
+  
+}
+
+.fl-table {
+  overflow-y:scroll;
+}
+
+
+mat-toolbar{
+    margin-bottom: 30px;
+    background-color: rgba(17, 13, 248, 0.597);
+  }
+
+
+  .btn-dialog-close{
+    margin-left: 250px;
+  
+  }
+  button{
+    border: unset;
+  }

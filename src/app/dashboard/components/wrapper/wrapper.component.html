@@ -1,0 +1,68 @@
+<mat-sidenav-container autosize>
+    <mat-sidenav #sidenav mode="side" opened="true">
+        <mat-nav-list>
+
+            <mat-list-item  (click)="isExpanded = ! isExpanded" style="margin-bottom: 30px;">
+                
+                <img [src]="imageSrc" style="width: 30px; height:30px; padding-right:20px ;" />
+            <mat-icon mat-list-icon class="chevron-button sidenav-button" [ngClass]="{'rotated': isExpanded}">chevron_right</mat-icon>
+            </mat-list-item > 
+
+                <mat-list-item (click)="openDialog('createModels')">
+                    <mat-icon>view_comfy</mat-icon>
+                <span *ngIf="isExpanded">Models</span>
+                </mat-list-item>
+
+                <mat-list-item (click)="openDialog('createState')">
+                    <mat-icon>domain</mat-icon>
+                <span *ngIf="isExpanded">States</span>
+                </mat-list-item>
+
+                <mat-list-item (click)="openDialog('createAction')">
+                    <mat-icon> layers</mat-icon>
+                <span *ngIf="isExpanded">Actions</span>
+                </mat-list-item>
+
+                <mat-list-item (click)="openDialog('createReducer')">
+                    <mat-icon>all_inclusive</mat-icon>
+                <span *ngIf="isExpanded">Reducers</span>
+                </mat-list-item>
+
+                <mat-list-item (click)="openDialog('createSelector')">
+                    <mat-icon>redo</mat-icon>
+                <span *ngIf="isExpanded">Selectors</span>
+                </mat-list-item>
+                
+                <mat-list-item (click)="openDialog('createEffect')">
+                    <mat-icon>gesture</mat-icon>
+                <span *ngIf="isExpanded">Effects</span>
+                </mat-list-item>
+
+
+                <mat-list-item style="margin-top: 200px;" (click)="download()">
+                    <mat-icon>get_app</mat-icon>
+                <span *ngIf="isExpanded">Download Your Store</span>
+                </mat-list-item>
+
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+
+    <div class="content">
+        <mat-toolbar>
+            <h4>Create Your Redux Store</h4>
+        </mat-toolbar>
+        <app-info></app-info>
+        
+<simple-notifications></simple-notifications>
+     
+    </div>
+
+
+</mat-sidenav-container>
+    
+
+
+    
+

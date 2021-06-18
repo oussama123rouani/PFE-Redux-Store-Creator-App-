@@ -1,0 +1,17 @@
+
+<mat-toolbar>
+    <span> Create Action</span>
+    <span class="fill-remaining-space" ></span>
+    <button class="btn-dialog-close" mat-stroked-button tabIndex="-1" (click)="close()"><mat-icon>cancel</mat-icon></button>
+</mat-toolbar>
+ <div mat-dialog-content>              
+<form [formGroup]="ActionForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="type" formControlName="type" class="form-control" placeholder="type">
+    <input type="text" formControlName="payload" class="form-control" placeholder="payload">
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+
+    
+        
+         
